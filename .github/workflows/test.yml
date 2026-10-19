@@ -36,4 +36,6 @@ jobs:
 
       - run: pip install . --group dev
 
+      - run: python -c "import ssl; print(ssl.OPENSSL_VERSION)"
+
       - run: pytest
